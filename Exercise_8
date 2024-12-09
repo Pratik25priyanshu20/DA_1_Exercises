@@ -48,7 +48,7 @@
       "metadata": {
         "id": "XjBTZiNRNgDR"
       },
-      "execution_count": 1,
+      "execution_count": 18,
       "outputs": []
     },
     {
@@ -84,13 +84,13 @@
         "print(df.head())\n"
       ],
       "metadata": {
-        "id": "uoZT4MHpN8il",
-        "outputId": "3b0cc8aa-1d91-4530-b6e2-b605ab306496",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "uoZT4MHpN8il",
+        "outputId": "28668000-8094-497b-aa1b-45325afaaddf"
       },
-      "execution_count": 2,
+      "execution_count": 19,
       "outputs": [
         {
           "output_type": "stream",
@@ -169,19 +169,19 @@
         "print(\"\\nXGBoost Classification Report:\\n\", classification_report(y_test, xgb_pred))\n"
       ],
       "metadata": {
-        "id": "2_AZV38jOSIK",
-        "outputId": "c49d6e22-ce28-46f8-9461-30d195a4c8c7",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "2_AZV38jOSIK",
+        "outputId": "eebe50bc-6497-4c1d-8764-662a74a933a4"
       },
-      "execution_count": 3,
+      "execution_count": 20,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stderr",
           "text": [
-            "/usr/local/lib/python3.10/dist-packages/xgboost/core.py:158: UserWarning: [21:01:17] WARNING: /workspace/src/learner.cc:740: \n",
+            "/usr/local/lib/python3.10/dist-packages/xgboost/core.py:158: UserWarning: [21:39:29] WARNING: /workspace/src/learner.cc:740: \n",
             "Parameters: { \"use_label_encoder\" } are not used.\n",
             "\n",
             "  warnings.warn(smsg, UserWarning)\n"
@@ -254,13 +254,13 @@
         "print(\"\\nKNN Classification Report:\\n\", classification_report(y_test, knn_pred))\n"
       ],
       "metadata": {
-        "id": "VCdCyqW9Pelo",
-        "outputId": "63c4eec5-44c0-4c69-e827-fbabb127ca44",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "VCdCyqW9Pelo",
+        "outputId": "dd02b8dd-9eff-452a-a20a-efda76d81e00"
       },
-      "execution_count": 10,
+      "execution_count": 21,
       "outputs": [
         {
           "output_type": "stream",
@@ -314,13 +314,13 @@
         "evaluate_model(y_test, knn_pred, f\"KNN (k={5})\")\n"
       ],
       "metadata": {
-        "id": "XIijciM9QE71",
-        "outputId": "bca2535a-44e9-44c8-aaa3-830da2349b4a",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "XIijciM9QE71",
+        "outputId": "04764446-309e-4bf9-939d-0819a9920fee"
       },
-      "execution_count": 12,
+      "execution_count": 22,
       "outputs": [
         {
           "output_type": "stream",
@@ -436,14 +436,14 @@
         "print(f\"Optimal k based on F1-Score: {optimal_k_metrics}\")\n"
       ],
       "metadata": {
-        "id": "8P1ZToPDSqBX",
-        "outputId": "7da3117b-665d-4d27-b0b0-111f37f90291",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 631
-        }
+        },
+        "id": "8P1ZToPDSqBX",
+        "outputId": "3b3581ac-60ee-4dc7-eec0-4ac0cdece57d"
       },
-      "execution_count": 14,
+      "execution_count": 23,
       "outputs": [
         {
           "output_type": "display_data",
